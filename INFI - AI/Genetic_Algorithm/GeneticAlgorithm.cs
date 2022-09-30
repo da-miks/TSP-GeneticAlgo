@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,7 +32,7 @@ namespace Genetic_Algorithm
         /// <param name="generation">how many epochs it runs through (1 generation = generation of mutated and combined routes)</param>
         /// <param name="filename">the tsp file location</param>
         public GeneticAlgorithm(double mutation, double combination, int population, int generation, string filename)
-        {
+        { 
             this.MutationRate = mutation;
             this.CombinationRate = combination;
             this.PopulationSize = population;
@@ -46,6 +47,8 @@ namespace Genetic_Algorithm
         /// </summary>
         public void Start()
         {
+            Stopwatch stopwatch = new();
+            stopwatch.Start();
             #region Generate random routes with shuffle algorithm and calculate first fitness scores of random routes
             Routes.Clear(); //Starts with empty routes
             int[] start = new int[Distances.GetLength(0)];
@@ -67,10 +70,13 @@ namespace Genetic_Algorithm
             {
 
                 Dictionary<int, double> selectedRoutes = sortedDictionary.Take(sortedDictionary.Count / 2).ToDictionary(k => k.Key, v => v.Value);
+                Dictionary<int, double> fittestRoutes = sortedDictionary.Take(sortedDictionary.Count / 10).ToDictionary(k => k.Key, v => v.Value);
                 List<int[]> mutatedRoutes = Mutate(MutationRate, selectedRoutes);
                 List<int[]> combinatedRoutes = Combination(CombinationRate, selectedRoutes);
                 modifiedRoutes = mutatedRoutes.Concat(combinatedRoutes).ToList();
+
                 sortedDictionary = GetSortedFitnessScores(modifiedRoutes);
+                sortedDictionary.Concat(fittestRoutes).OrderBy(k => k.Key);
                 Console.WriteLine($"Generation: {i}     Best: {sortedDictionary.ElementAt(0).Value}");
             }
             #endregion
@@ -80,6 +86,9 @@ namespace Genetic_Algorithm
                 Console.Write(city +" ");
             }
             #endregion
+            stopwatch.Stop();
+            TimeSpan ts = stopwatch.Elapsed;
+            Console.WriteLine($"\nElapsed time for {Generations} Generations: {ts.TotalSeconds}");
         }
         #endregion
         #region Calculate Fitness Score
@@ -154,8 +163,10 @@ namespace Genetic_Algorithm
             for (int i = 0; i < combinationCount * PopulationSize; i++)
             {
                 int randomPosition = rnd.Next(0, routeLength);                
-                int[] parent1 = modifiedRoutes[selectedRoutes.ElementAt(rnd.Next(0, routeLength)).Key];
-                int[] parent2 = modifiedRoutes[selectedRoutes.ElementAt(rnd.Next(0, routeLength)).Key];
+                //int[] parent1 = modifiedRoutes[selectedRoutes.ElementAt(rnd.Next(0, routeLength)).Key];
+                int[] parent1 = modifiedRoutes[selectedRoutes.ElementAt(rnd.Next(0, selectedRoutes.Count)).Key];
+                //int[] parent2 = modifiedRoutes[selectedRoutes.ElementAt(rnd.Next(0, routeLength)).Key];
+                int[] parent2 = modifiedRoutes[selectedRoutes.ElementAt(rnd.Next(0, selectedRoutes.Count)).Key];
                 producedChild = parent1.Take(randomPosition).ToList();
                 int childLength = producedChild.Count;
                 for (int j = 0; j < routeLength; j++)

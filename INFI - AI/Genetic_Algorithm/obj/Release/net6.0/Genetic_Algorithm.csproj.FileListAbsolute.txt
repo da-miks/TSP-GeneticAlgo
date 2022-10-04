@@ -1,0 +1,15 @@
+C:\Users\mikak\OneDrive\Desktop\Schule\5. Klasse\INFI - AI\TSP-GeneticAlgo\INFI - AI\Genetic_Algorithm\bin\Release\net6.0\Genetic_Algorithm.exe
+C:\Users\mikak\OneDrive\Desktop\Schule\5. Klasse\INFI - AI\TSP-GeneticAlgo\INFI - AI\Genetic_Algorithm\bin\Release\net6.0\Genetic_Algorithm.deps.json
+C:\Users\mikak\OneDrive\Desktop\Schule\5. Klasse\INFI - AI\TSP-GeneticAlgo\INFI - AI\Genetic_Algorithm\bin\Release\net6.0\Genetic_Algorithm.runtimeconfig.json
+C:\Users\mikak\OneDrive\Desktop\Schule\5. Klasse\INFI - AI\TSP-GeneticAlgo\INFI - AI\Genetic_Algorithm\bin\Release\net6.0\Genetic_Algorithm.dll
+C:\Users\mikak\OneDrive\Desktop\Schule\5. Klasse\INFI - AI\TSP-GeneticAlgo\INFI - AI\Genetic_Algorithm\bin\Release\net6.0\Genetic_Algorithm.pdb
+C:\Users\mikak\OneDrive\Desktop\Schule\5. Klasse\INFI - AI\TSP-GeneticAlgo\INFI - AI\Genetic_Algorithm\obj\Release\net6.0\Genetic_Algorithm.csproj.AssemblyReference.cache
+C:\Users\mikak\OneDrive\Desktop\Schule\5. Klasse\INFI - AI\TSP-GeneticAlgo\INFI - AI\Genetic_Algorithm\obj\Release\net6.0\Genetic_Algorithm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mikak\OneDrive\Desktop\Schule\5. Klasse\INFI - AI\TSP-GeneticAlgo\INFI - AI\Genetic_Algorithm\obj\Release\net6.0\Genetic_Algorithm.AssemblyInfoInputs.cache
+C:\Users\mikak\OneDrive\Desktop\Schule\5. Klasse\INFI - AI\TSP-GeneticAlgo\INFI - AI\Genetic_Algorithm\obj\Release\net6.0\Genetic_Algorithm.AssemblyInfo.cs
+C:\Users\mikak\OneDrive\Desktop\Schule\5. Klasse\INFI - AI\TSP-GeneticAlgo\INFI - AI\Genetic_Algorithm\obj\Release\net6.0\Genetic_Algorithm.csproj.CoreCompileInputs.cache
+C:\Users\mikak\OneDrive\Desktop\Schule\5. Klasse\INFI - AI\TSP-GeneticAlgo\INFI - AI\Genetic_Algorithm\obj\Release\net6.0\Genetic_Algorithm.dll
+C:\Users\mikak\OneDrive\Desktop\Schule\5. Klasse\INFI - AI\TSP-GeneticAlgo\INFI - AI\Genetic_Algorithm\obj\Release\net6.0\refint\Genetic_Algorithm.dll
+C:\Users\mikak\OneDrive\Desktop\Schule\5. Klasse\INFI - AI\TSP-GeneticAlgo\INFI - AI\Genetic_Algorithm\obj\Release\net6.0\Genetic_Algorithm.pdb
+C:\Users\mikak\OneDrive\Desktop\Schule\5. Klasse\INFI - AI\TSP-GeneticAlgo\INFI - AI\Genetic_Algorithm\obj\Release\net6.0\Genetic_Algorithm.genruntimeconfig.cache
+C:\Users\mikak\OneDrive\Desktop\Schule\5. Klasse\INFI - AI\TSP-GeneticAlgo\INFI - AI\Genetic_Algorithm\obj\Release\net6.0\ref\Genetic_Algorithm.dll

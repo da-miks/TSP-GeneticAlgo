@@ -76,7 +76,7 @@ namespace Genetic_Algorithm
                 modifiedRoutes = mutatedRoutes.Concat(combinatedRoutes).ToList();
 
                 sortedDictionary = GetSortedFitnessScores(modifiedRoutes);
-                sortedDictionary.Concat(fittestRoutes).OrderBy(k => k.Key);
+                sortedDictionary.Concat(fittestRoutes).OrderBy(e => e.Value);
                 Console.WriteLine($"Generation: {i}     Best: {sortedDictionary.ElementAt(0).Value}");
             }
             #endregion

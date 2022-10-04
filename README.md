@@ -22,3 +22,5 @@ Folgende Werte wurden verwendet:
 4000 Population Size
 
 2000 Generations
+
+Vorgehensweise ist als PDF hinterlegt

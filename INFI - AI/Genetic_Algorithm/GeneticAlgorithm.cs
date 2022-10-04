@@ -70,7 +70,7 @@ namespace Genetic_Algorithm
             {
 
                 Dictionary<int, double> selectedRoutes = sortedDictionary.Take(sortedDictionary.Count / 2).ToDictionary(k => k.Key, v => v.Value);
-                Dictionary<int, double> fittestRoutes = sortedDictionary.Take(sortedDictionary.Count / 10).ToDictionary(k => k.Key, v => v.Value);
+                Dictionary<int, double> fittestRoutes = sortedDictionary.Take(sortedDictionary.Count / 10).ToDictionary(k => k.Key, v => v.Value); 
                 List<int[]> mutatedRoutes = Mutate(MutationRate, selectedRoutes);
                 List<int[]> combinatedRoutes = Combination(CombinationRate, selectedRoutes);
                 modifiedRoutes = mutatedRoutes.Concat(combinatedRoutes).ToList();
